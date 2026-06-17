@@ -8,8 +8,14 @@ st.set_page_config(page_title="Dashboard Premier League", layout="wide")
 
 st.markdown("""
     <style>
+    /* Ocultar elementos nativos y marcas de agua de Streamlit */
     [data-testid="stToolbar"] {visibility: hidden !important;}
+    [data-testid="stHeader"] {visibility: hidden !important;}
+    [data-testid="stDeployButton"] {display: none !important;}
+    #MainMenu {visibility: hidden !important;}
     footer {visibility: hidden !important;}
+    .viewerBadge_container {display: none !important;}
+    .viewerBadge_link {display: none !important;}
     
     /* Aprovechamiento máximo del lienzo */
     .block-container { padding-top: 2rem; padding-bottom: 2rem; max-width: 98%; }
